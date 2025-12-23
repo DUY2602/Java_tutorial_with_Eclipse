@@ -6,6 +6,7 @@ public class Demo2 {
 	public static void main(String[] args) {
 		System.out.println("Hello Java");
 		
+		// Quickly create System.out.println ---> sysout + ctrl space + ENTER
 		System.out.println("Java is fun");
 	}
 }
