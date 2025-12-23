@@ -2,6 +2,7 @@ package demo;
 
 import java.util.Scanner;
 
+// Exercise 1: Create a basic info inputting program for a product
 public class Demo6 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

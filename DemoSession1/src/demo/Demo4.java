@@ -2,6 +2,8 @@ package demo;
 
 public class Demo4 {
 	public static void main(String[] args) {
+		
+		// Variables & data types
 		int id = 1;
 		String name = "Tivi";
 		double price = 4.5;
@@ -11,6 +13,7 @@ public class Demo4 {
 		String photo = "1.png";
 		boolean status = true;
 		
+		// Printing out the info
 		System.out.println("ID: " + id);
 		System.out.println("Name: " + name);
 		System.out.println("Price: " + price);
