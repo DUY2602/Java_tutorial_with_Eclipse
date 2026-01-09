@@ -47,4 +47,12 @@ public class Product {
 	public void total() {
 		System.out.println("Total: " + this.price * this.quantity);
 	}
+	
+	public void printInfo() {
+		System.out.println("ID: " + this.id);
+		System.out.println("Name: " + this.name);
+		System.out.println("Price: " + this.price);
+		System.out.println("Quantity: " + this.quantity);
+	}
+	
 }

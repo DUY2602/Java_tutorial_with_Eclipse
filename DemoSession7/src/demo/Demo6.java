@@ -1,5 +1,7 @@
 package demo;
 
+import java.util.Scanner;
+
 import entities.Product;
 
 public class Demo6 {
@@ -11,5 +13,24 @@ public class Demo6 {
 		p1.total();
 		p2.total();
 		p3.total();
+		
+		Product p4 = new Product();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("ID: ");
+		p4.setId(sc.nextInt());
+		
+		sc.nextLine();
+		
+		System.out.print("Name: ");
+		p4.setName(sc.nextLine());
+		
+		System.out.print("Price: ");
+		p4.setPrice(sc.nextDouble());
+		
+		System.out.print("Quantity: ");
+		p4.setQuantity(sc.nextInt());
+		
+		p4.printInfo();
 	}
 }
