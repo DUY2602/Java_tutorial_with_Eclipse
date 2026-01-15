@@ -1,5 +1,7 @@
 package entities;
 
+import java.util.Scanner;
+
 public class Human {
 	private String name;
 	private String gender;
@@ -24,5 +26,18 @@ public class Human {
 		super();
 	}
 	
+	public void print() {
+		System.out.println("Name: " + this.name);
+		System.out.println("Gender: " + this.gender);
+	}
 	
+	public void input() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Name: ");
+		this.name = sc.nextLine();
+		
+		System.out.println("Gender: ");
+		this.gender = sc.nextLine();
+	}
 }
