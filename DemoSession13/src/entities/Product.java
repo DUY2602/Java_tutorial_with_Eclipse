@@ -10,7 +10,19 @@ public class Product {
 	private String description;
 	private Date created;
 	private boolean status;
-	
+	public Product(int id, String name, double price, int quantity, String description, Date created, boolean status) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+		this.description = description;
+		this.created = created;
+		this.status = status;
+	}
+	public Product() {
+		super();
+	}
 	public int getId() {
 		return id;
 	}
@@ -53,24 +65,10 @@ public class Product {
 	public void setStatus(boolean status) {
 		this.status = status;
 	}
-	public Product(int id, String name, double price, int quantity, String description, Date created, boolean status) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.price = price;
-		this.quantity = quantity;
-		this.description = description;
-		this.created = created;
-		this.status = status;
-	}
-	public Product() {
-		super();
-	}
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", quantity=" + quantity + ", description="
 				+ description + ", created=" + created + ", status=" + status + "]";
 	}
-	
 	
 }

@@ -1,18 +1,18 @@
 package entities;
 
 import java.text.SimpleDateFormat;
-
 import java.util.Date;
 
 public class Account {
 	private int id;
 	private String username;
 	private String password;
-	private String fullname;
+	private String fullName;
 	private Date dob;
 	private String email;
 	private Date created;
 	private boolean status;
+	private String security_code;
 	public int getId() {
 		return id;
 	}
@@ -31,11 +31,11 @@ public class Account {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getFullname() {
-		return fullname;
+	public String getFullName() {
+		return fullName;
 	}
-	public void setFullname(String fullname) {
-		this.fullname = fullname;
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
 	public Date getDob() {
 		return dob;
@@ -61,25 +61,35 @@ public class Account {
 	public void setStatus(boolean status) {
 		this.status = status;
 	}
-	public Account(int id, String username, String password, String fullname, Date dob, String email, Date created,
-			boolean status) {
+	public String getSecurity_code() {
+		return security_code;
+	}
+	public void setSecurity_code(String security_code) {
+		this.security_code = security_code;
+	}
+	public Account(int id, String username, String password, String fullName, Date dob, String email, Date created,
+			boolean status, String security_code) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
-		this.fullname = fullname;
+		this.fullName = fullName;
 		this.dob = dob;
 		this.email = email;
 		this.created = created;
 		this.status = status;
+		this.security_code = security_code;
 	}
 	public Account() {
 		super();
 	}
 	@Override
 	public String toString() {
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		return "Account [id=" + id + ", username=" + username + ", password=" + password + ", fullname=" + fullname
-				+ ", dob=" + sdf.format(dob) + ", email=" + email + ", created=" + sdf.format(created) + ", status=" + status + "]";
+		return "Account [id=" + id + ", username=" + username + ", password=" + password + ", fullName=" + fullName
+				+ ", dob=" + dob + ", email=" + email + ", created=" + created + ", status=" + status
+				+ ", security_code=" + security_code + "]";
 	}
+	
+	
+	
 }

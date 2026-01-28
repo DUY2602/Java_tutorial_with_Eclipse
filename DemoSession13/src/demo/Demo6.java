@@ -5,13 +5,12 @@ import java.util.List;
 import entities.Product;
 import models.ProductModel;
 
-public class Demo4 {
+public class Demo6 {
 	public static void main(String[] args) {
 		ProductModel productModel = new ProductModel();
-		boolean status = true;
-		List<Product> products = productModel.searchByStatus(status);
+		List<Product> products = productModel.searchByKeyword("ti");
 		for (Product product : products) {
-			System.out.println(product.toString());
+			System.out.println(product);
 		}
 	}
 }

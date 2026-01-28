@@ -1,16 +1,16 @@
 package demo;
 
-import java.util.List;
 
 import entities.Product;
 import models.ProductModel;
 
-public class Demo4 {
+public class Demo10 {
 	public static void main(String[] args) {
 		ProductModel productModel = new ProductModel();
-		boolean status = true;
-		List<Product> products = productModel.searchByStatus(status);
-		for (Product product : products) {
+		Product product = productModel.findByID(20);
+		if(product == null) {
+			System.out.println("not found");
+		} else {
 			System.out.println(product.toString());
 		}
 	}

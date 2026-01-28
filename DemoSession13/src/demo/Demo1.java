@@ -4,10 +4,10 @@ import models.ConnectDB;
 
 public class Demo1 {
 	public static void main(String[] args) {
-		if (ConnectDB.connection() == null) {
-			System.out.println("Failed to connect");
+		if(ConnectDB.connection() == null) {
+			System.out.println("Ket noi that bai");
 		} else {
-			System.out.println("Successful");
+			System.out.println("Ket noi thanh cong");
 		}
 	}
 }
